@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<!--    <templates id="report_sale_receipt_template" xml:space="preserve">-->
+<!--    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">-->
+<!--        <xpath expr="//t[@t-esc='receipt.cashier']/.." position="after">-->
+<!--            <t t-if="receipt.partner">-->
+<!--                <div style="font-weight: bold;">-->
+<!--                    Customer: <t t-esc="receipt.partner.name"/>-->
+<!--                </div>-->
+<!--            </t>-->
+<!--        </xpath>-->
+<!--    </t>-->
+<!--  </templates>-->
+
+    <template id="report_sale_receipt_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <t t-if="o.sale_item_id">
+                            <span>الاصناف المباعة</span>
+                            <table class="table table-sm o_main_table" name="sale_item_id">
+                                <thead>
+                                    <tr>
+                                        <th name="th_item_name" class="text-left">
+                                            <span>اسم الصنف</span>
+                                        </th>
+                                        <th name="th_item_price" class="text-left">
+                                            <span>سعر الوحدة</span>
+                                        </th>
+                                        <th name="th_quantity" class="text-left">
+                                            <span>الكمية</span>
+                                        </th>
+                                        <th name="th_subtotal" class="text-left">
+                                            <span>اجمالي حساب الصنف</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <t t-foreach="o.sale_item_id" t-as="line">
+                                    <tr>
+                                        <td>
+                                            <span t-field="line.item_name"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.item_price"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.quantity"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line.sale_item_subtotal"/>
+                                                <!--<span t-value="line.item_price * line.quantity"/>-->
+<!--                                            <span t-set="foo" t-value="2 + 1"/>-->
+<!--                                            <span t-out="foo"/>-->
+<!--                                            <span t-esc="line.item_price * line.quantity"/>-->
+<!--                                            <t t-set="subtotal"-->
+<!--                                               t-value="line.item_price * line.quantity for line in layout_category['lines']"/>-->
+<!--                                            <t t-set="subtotal"-->
+<!--                                                t-value="sum([line.item_price * line.quantity for line in layout_category['lines']])"/>-->
+                                        </td>
+                                    </tr>
+                                </t>
+                                <tr>
+                                        <td colspan="2">
+                                            اجمالي الفاتورة
+                                        </td>
+                                        <td>
+                                            <span t-field="o.sale_total_credit"/>
+                                        </td>
+                                    </tr>
+                            </table>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

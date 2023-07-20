@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+   <t t-name="CurrencyExRatesPopup" owl="1">
+       <div role="dialog" class="modal-dialog">
+           <Draggable>
+           <div class="popup popup-currency-rates" style="background-color: #7bcedb">
+               <p class="title drag-handle">
+                   <t t-esc="props.title" />
+               </p>
+               <span class="body">
+                   <select t-model="state.inputAPI" name="Select a currency">
+                       <option value="">Select a currency</option>
+                       <option value="USD">US Dollar</option>
+                       <option value="EUR">European Euro</option>
+                   </select>
+                   <button type="button" id="display-rate-button" t-on-click="fetch">Display</button>
+<!--                       <button onClick="" type="button">Display</button>-->
+
+                   <div><t t-esc="state.outputAPI"/></div>
+<!--                   &lt;!&ndash; Display coupon category products in popup &ndash;&gt;-->
+<!--&lt;!&ndash;                      <ProductList products="productsToDisplay" />&ndash;&gt;-->
+<!--                   &lt;!&ndash; Adding text field&ndash;&gt;-->
+<!--                   <input type="text" />-->
+<!--                     &lt;!&ndash; Adding date field&ndash;&gt;-->
+<!--                   <input type="date" />-->
+<!--                   <form>-->
+<!--                       <select onClick="fetch" t-model="state.inputAPI" name="Select a currency" id="currencies">-->
+<!--                           <option value="">Select a currency</option>-->
+<!--                           <option value="USD">US Dollar</option>-->
+<!--                           <option value="EUR">European Euro</option>-->
+<!--                       </select>-->
+<!--                       <button onClick="fetch">Fetch</button>-->
+<!--                       <button onClick="display">Display</button>-->
+<!--                   </form>-->
+<!--                     &lt;!&ndash; Adding selection field&ndash;&gt;-->
+<!--                   <select t-model="state.color">-->
+<!--                        <option value="">Select a color</option>-->
+<!--                        <option value="red">Red</option>-->
+<!--                        <option value="blue">Blue</option>-->
+<!--                  </select>-->
+<!--                   <div>Color: <t t-esc="state.myAPI"/></div>-->
+
+               </span>
+               <div class="footer">
+                   <div class="button cancel" t-on-click="confirm">
+                       <t t-esc="props.confirmText" />
+                   </div>
+               </div>
+           </div>
+           </Draggable>
+       </div>
+   </t>
+</templates>

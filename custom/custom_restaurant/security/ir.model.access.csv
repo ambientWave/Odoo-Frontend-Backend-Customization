@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_menu_item_read_only,access.menu.item,custom_restaurant.model_menu_item,,1,0,0,0
+access_menu_item_full_read_write,access.menu.item,custom_restaurant.model_menu_item,,1,1,0,0
+access_menu_item_full_perm,access.menu.item,custom_restaurant.model_menu_item,,1,1,1,1
+access_pos_combined_sale_order_read_only,access.pos.combined.sale.order,custom_restaurant.model_combined_sale_order,custom_restaurant.group_show_sales_deliveryman,1,0,0,0
+access_pos_combined_sale_order_read_write,access.pos.combined.sale.order,custom_restaurant.model_combined_sale_order,custom_restaurant.group_show_sales_waiter,1,1,0,0
+access_pos_combined_sale_order_full_perm,access.pos.combined.sale.order,custom_restaurant.model_combined_sale_order,base.group_user,1,1,1,1
+access_wizard_remove_invoice_full_perm,access.wizard.remove.invoice,custom_restaurant.model_wizard_remove_invoice,base.group_user,1,1,1,1
+access_inventory_stock_full_perm,access.inventory.stock,custom_restaurant.model_inventory_stock,base.group_user,1,1,1,1
+access_pos_combined_sale_items_full_perm,access.pos.combined.sale.items,custom_restaurant.model_combined_sale_items,base.group_user,1,1,1,1

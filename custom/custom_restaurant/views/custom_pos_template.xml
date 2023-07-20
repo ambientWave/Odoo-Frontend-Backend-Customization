@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="pos_extend_assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/custom_restaurant/static/src/js/javas.js"/>
+            <script type="text/javascript" src="/custom_restaurant/static/src/js/myButton.js"/>
+            <script type="text/javascript" src="/custom_restaurant/static/src/js/currencyExRatesPopup.js"/>
+            <script type="text/javascript" src="/custom_restaurant/static/src/js/customTicketButtons.js"/>
+            <!--            <script type="text/javascript" src="/pos_custom_buttons/static/src/js/pos_payment_button.js"/>-->
+<!--            <script type="text/javascript" src="/pos_custom_buttons/static/src/js/pos_product_screen_button.js"/>-->
+<!--            <script type="text/javascript" src="/pos_custom_buttons/static/src/js/pos_ticket_button.js"/>-->
+        </xpath>
+    </template>
+</odoo>

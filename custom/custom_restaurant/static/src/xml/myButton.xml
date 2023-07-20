@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+   <!-- Coupon button-->
+    <t t-name="currencyExButton" owl="1">
+        <button class="control-button" t-att-class="is_available()?'highlight' : ''" >
+            <i class="fa fa-tag"/>
+            <span font-size="1">Currency Exchange Rates
+        </span>
+        </button>
+    </t>
+
+    <t t-name="CustomTicketButtons" owl="1">
+       <div class="ticket-button" t-att-class="{ highlight: props.isTicketScreenShown }" t-on-click="onClick">
+           <div class="with-badge" t-att-badge="count">
+               <i class="fa fa-ticket" aria-hidden="true"></i>
+           </div>
+           <div font-size="1">Currency Exchange Rates</div>
+       </div>
+   </t>
+
+    <t t-inherit="point_of_sale.Chrome" t-inherit-mode="extension">
+       <xpath expr="//TicketButton" position="before">
+               <CustomTicketButtons isTicketScreenShown="isTicketScreenShown" />
+       </xpath>
+       <xpath expr="//TicketButton" position="after">
+           <CustomTicketButtons isTicketScreenShown="isTicketScreenShown" t-if="env.isMobile" />
+       </xpath>
+   </t>
+
+</templates>

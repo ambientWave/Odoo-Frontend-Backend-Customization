@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_remove_invoice_form" model="ir.ui.view">
+        <field name="name">wizard.remove.invoice.form</field>
+        <field name="model">wizard.remove.invoice</field>
+        <field name="arch" type="xml">
+            <form string="الغاء الفاتورة">
+                <group class="oe_title">
+                    <field name="reason" options="{'no_create_edit': True}"/>
+                </group>
+                <footer>
+                    <button name="action_cancelled" string="حفظ" type="object" class="btn-primary"/>
+                    <button name="action_view_sale_order" string="عرض الفواتير المسجلة بتاريخ اليوم" type="object" class="btn-primary"/>
+                    <button string="تراجع" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_remove_invoice_reason" model="ir.actions.act_window">
+        <field name="name">الغاء الفاتورة</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wizard.remove.invoice</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_remove_invoice_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>
+<!--# TODO modify the attributes to work with our customized fields and put the following line in the view that you want the button to appear to user-->
+<!--<button name="%(custom_restaurant.crm_lead_lost_action)d" string="Mark Lost"-->
+<!--                            type="action" class="oe_highlight" context="{'default_lead_id': active_id}" attrs="{'invisible': ['|', ('type', '=', 'lead'), '&amp;',('active', '=', False),('probability', '&lt;', 100)]}"/>-->

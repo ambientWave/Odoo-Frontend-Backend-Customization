@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_inventory_stock_tree" model="ir.ui.view">
+        <field name="name">inventory.stock.tree</field>
+        <field name="model">inventory.stock</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id"/>
+                <field name="stock_name"/>
+                <field name="stock_price"/>
+                <field name="stock_qty"/>
+                <field name="vendor_name"/>
+                <field name="vendor_contact_phone_number"/>
+                <field name="last_purchase_timestamp" optional="show"/>
+                <field name="accountable_user"/>
+                <field name="note"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_inventory_stock_form" model="ir.ui.view">
+        <field name="name">inventory.stock.form</field>
+        <field name="model">inventory.stock</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="stock_name"/>
+                        <field name="stock_price"/>
+                        <field name="stock_qty"/>
+                        <field name="vendor_name"/>
+                        <field name="vendor_contact_phone_number"/>
+                        <field name="last_purchase_timestamp"/>
+                        <field name="accountable_user"/>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+<!--                <div class="oe_chatter">-->
+<!--                    <field name="message_follower_ids"/>-->
+<!--                    <field name="message_ids"/>-->
+<!--                </div>-->
+            </form>
+        </field>
+    </record>
+    <record id="action_inventory_stock_tree" model="ir.actions.act_window">
+        <field name="name">البضاعة</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">inventory.stock</field>
+<!--        <field name="view_id" ref="view_combined_menu_item_tree"/>-->
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                يمكنك انشاء كارت للصنف المراد اضافته لقاعدة البيانات
+            </p>
+            <p>
+                بعد الانتهاء، يمكنك اضافته علي اوردر للعميل
+                <br/>
+                كما يمكنك تغيير البيانات الخاصه بعذا الصنف
+            </p>
+        </field>
+    </record>
+
+        <!-- main menu entry that refers to sales part inside the UI -->
+    <menuitem id="menu_inventory_stock_root"
+              name="البضاعة والمخزن"
+              action="action_inventory_stock_tree"
+              sequence="20"/>
+
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="paperformat_combined_sale_receipt" model="report.paperformat">
+        <field name="name">French Bank Check</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">140</field>
+        <field name="page_width">88</field>
+        <field name="orientation">Portrait</field>
+<!--        <field name="margin_top">3</field>-->
+<!--        <field name="margin_bottom">3</field>-->
+<!--        <field name="margin_left">3</field>-->
+<!--        <field name="margin_right">3</field>-->
+<!--        <field name="header_line" eval="False"/>-->
+<!--        <field name="header_spacing">3</field>-->
+<!--        <field name="dpi">80</field>-->
+    </record>
+
+    <record id="report_sale_receipt" model="ir.actions.report">
+        <field name="name">ريسيت البيع</field>
+        <field name="model">combined.sale.order</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">custom_restaurant.report_sale_receipt_template</field>
+        <field name="report_file">custom_restaurant.report_sale_receipt_template</field>
+<!--        <field name="print_report_name">'Print Badge - %s' % (object.name).replace('/', '')</field>-->
+        <field name="binding_model_id" ref="model_combined_sale_order"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="custom_restaurant.paperformat_combined_sale_receipt"/>
+    </record>
+
+
+
+
+</odoo>
