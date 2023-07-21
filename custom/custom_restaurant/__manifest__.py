@@ -19,11 +19,14 @@
         'views/menu_item.xml',
         'views/pos_combined.xml',
         'views/custom_pos_template.xml',
+        'views/assetsOfBackendCustomization.xml',
         'views/inventory_stock.xml',
         'report/report_sale_receipt_template.xml',
         'report/report.xml',
              ],
     'qweb': [
+        'static/src/xml/ChartOfAccountsListAddButtonToUpperPanel.xml',
+        'static/src/xml/account_group_hierarchy_action.xml',
         'static/src/xml/custom_pos.xml',
         'static/src/xml/myButton.xml',
         'static/src/xml/currencyExRatesPopup.xml'
