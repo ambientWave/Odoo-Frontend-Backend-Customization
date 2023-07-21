@@ -42,8 +42,8 @@ class AccountHierarchy(models.Model):
        
         result = {
            
-            'chart_of_account': final_list,
+            'chart_of_account': final_list
           
         }
-            
+        print("sssssssssssssssssssssssssssssssssssssss"+result)
         return result

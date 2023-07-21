@@ -4,9 +4,9 @@
         <template id="assets_backend" name="Accounts assets" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
                 <script type="text/javascript" src="/custom_restaurant/static/src/js/ChartOfAccountsListController.js"/>
-                
+                <script type="text/javascript" src="/custom_restaurant/static/src/js/ChartOfAccountsListButtonAction.js"/>
                 
             </xpath>
-    </template>
+        </template>
     </data>
 </odoo>

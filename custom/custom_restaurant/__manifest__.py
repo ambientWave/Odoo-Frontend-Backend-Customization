@@ -9,7 +9,7 @@
     'description': """
 نظام ادارة المطعم يتكون من جزء لادارة البضاعة والمشتريات وجزء لادارة المبيعات.
     """,
-    'depends': ['sales_team', 'payment', 'portal', 'utm', 'sale', 'mail', 'crm', 'l10n_co',
+    'depends': ['base', 'web', 'sales_team', 'payment', 'portal', 'utm', 'sale', 'mail', 'crm', 'l10n_co',
                 'point_of_sale'],
     'data': [
         'security/ir.model.access.csv',
