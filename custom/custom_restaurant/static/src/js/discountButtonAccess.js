@@ -19,6 +19,16 @@ odoo.define('custom_restaurant.DiscountAccess', function(require) {
         async onClick() {
             var self = this;
             NumberBuffer.reset();
+            // approach #1
+            session.user_has_group('custom_restaurant.pos_discount_group').then(
+                async function(hasGroup) {
+                    if(hasGroup) {
+                        // return self._super();
+                        console.log("yes");
+                    } else {
+                        console.log("no");
+                    }});
+            // approach #2
             var userInput = await this.showPopup("NumberPopup", {
                 isPassword:true,
                 'title':_t("Enter Password")
