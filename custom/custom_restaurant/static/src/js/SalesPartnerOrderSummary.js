@@ -82,7 +82,7 @@ odoo.define('custom_restaurant.SalesPartnerOrderSummary', function(require) {
                    console.log(self);
                    console.log(this.el);
                    console.log(this.env)
-                   console.log(this.state);
+                   console.log(this.state); //this is an important object
        
                    this._rpc({
                        model: "res.partner",
@@ -92,12 +92,17 @@ odoo.define('custom_restaurant.SalesPartnerOrderSummary', function(require) {
                        (new ComponentWrapper(this, SalesPartnerOrderSummary, useState(data[0]))
                        
                        ).mount(element);
-       
-                       console.log(`1${this.element}`);
-                       console.log(`2${element}`);
-                       console.log(`3${data}`);
-                       console.log(`4${this.env}`);
-                       console.log(`5${this.state}`);
+
+                       console.log('11');
+                       console.log(this.element);
+                       console.log('22');
+                       console.log(element);
+                       console.log('33');
+                       console.log(data); //this is an important object
+                       console.log('44');
+                       console.log(this.env);
+                       console.log('55');
+                       console.log(this.state);
                    });
        
                }
