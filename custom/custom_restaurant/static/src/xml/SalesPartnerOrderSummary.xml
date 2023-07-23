@@ -4,15 +4,11 @@
         <div class="center" style="width: 100%; text-align: center">
             <div>
                 <div>
-
+<p>a</p>
                 </div>
                 <div class="col-6">
-                    <Dropdown>
-                        <t t-set-slot="toggler">
-                            Click Me, Dropdown Menu
-                        </t>
-                        <DropdownItem t-on-dropdown-item-selected="selectItem1">Menu Item 1</DropdownItem>
-                    </Dropdown>
+                    <input></input>
+
                 </div>
             </div>
 

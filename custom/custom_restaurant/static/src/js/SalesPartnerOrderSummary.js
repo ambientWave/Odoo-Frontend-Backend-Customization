@@ -1,115 +1,115 @@
-/** @odoo-module **/
+// /** @odoo-module **/
 
-const {Component} = owl;
-const {useState} = owl.hooks;
-const FormRenderer = require("web.FormRenderer");
-const {ComponentWrapper} = require("web.OwlCompatibility");
-console.log("A");
-class SalesPartnerOrderSummary extends Component {
-    partner = useState({});
-    constructor(self, partner) {
-        super();
-        this.partner = partner;
-    }
-};
+// const { Component } = owl;
+// const { useState } = owl.hooks;
+// var FormRenderer = require('web.FormRenderer');
+// const { ComponentWrapper } = require('web.OwlCompatibility');
+// // console.log("A");
+// class SalesPartnerOrderSummary extends Component {
+//     partner = useState({});
+//     constructor(self, partner) {
+//         super();
+//         this.partner = partner;
+//     }
+// };
 
-Object.assign(SalesPartnerOrderSummary, {
-    template: "SalesPartnerOrderSummary"
-});
-console.log("C");
-FormRenderer.include({
+// Object.assign(SalesPartnerOrderSummary, {
+//     template: "SalesPartnerOrderSummary"
+// });
+// // console.log("C");
+// FormRenderer.include({
     
-    async _renderView() {
-        await this._super(...arguments);
-        for(let element of this.el.querySelectorAll(".o_partner_order_summary")) {
-            // console.log(this);
-            // console.log(self);
-            // console.log(this.el);
-            // console.log(this.env)
-            // console.log(this.state);
-console.log("C");
-            this._rpc({
-                model: "res.partner",
-                method: "read",
-                args: [[this.state.data.partner_id.res_id]]
-            }).then(data => {
-                (new ComponentWrapper(this, SalesPartnerOrderSummary, useState(data[0]))
+//     async _renderView() {
+//         await this._super(...arguments);
+//         for(let element of this.el.querySelectorAll(".o_partner_order_summary")) {
+//             // console.log(this);
+//             // console.log(self);
+//             // console.log(this.el);
+//             // console.log(this.env)
+//             // console.log(this.state);
+// console.log("C");
+//             this._rpc({
+//                 model: "res.partner",
+//                 method: "read",
+//                 args: [[this.state.data.partner_id.res_id]]
+//             }).then(data => {
+//                 (new ComponentWrapper(this, SalesPartnerOrderSummary, useState(data[0]))
                 
-                ).mount(element)
-console.log("C");
-                // console.log(`2${this.element}`);
-                // console.log(`2${element}`);
-                // console.log(`2${databaseResponse}`);
-                // console.log(`2${this.env}`);
-                // console.log(`2${this.state}`);
-            })
+//                 ).mount(element)
+// console.log("C");
+//                 // console.log(`2${this.element}`);
+//                 // console.log(`2${element}`);
+//                 // console.log(`2${databaseResponse}`);
+//                 // console.log(`2${this.env}`);
+//                 // console.log(`2${this.state}`);
+//             })
 
-        }
-
-
-    }
-});
+//         }
 
 
+//     }
+// });
 
 
-// odoo.define('custom_restaurant.SalesPartnerOrderSummary', function(require) {
-//     'use strict';
-//        const Registries = require('point_of_sale.Registries');
-//        const {Component} = owl;
-//        const {useState} = owl.hooks;
-//        const FormRenderer = require("web.FormRenderer");
-//        const {ComponentWrapper} = require("web.OwlCompatibility");
-//        console.log("a")
-//        class SalesPartnerOrderSummary extends Component {
-//            partner = useState({});
-//            constructor(self, partner) {
-//                super();
-//                this.partner = partner;
-//            }
+
+
+odoo.define('custom_restaurant.SalesPartnerOrderSummary', function(require) {
+    'use strict';
+    //    const Registries = require('point_of_sale.Registries');
+       const {Component} = owl;
+       const {useState} = owl.hooks;
+       const FormRenderer = require("web.FormRenderer");
+       const {ComponentWrapper} = require("web.OwlCompatibility");
+       console.log("a")
+       class SalesPartnerOrderSummary extends Component {
+           partner = useState({});
+           constructor(self, partner) {
+               super();
+               this.partner = partner;
+           }
            
-//        };
+       };
        
-//     //    Object.assign(SalesPartnerOrderSummary, {
-//     //        template: "custom_restaurant.SalesPartnerOrderSummary"
-//     //    });
+    //    Object.assign(SalesPartnerOrderSummary, {
+    //        template: "custom_restaurant.SalesPartnerOrderSummary"
+    //    });
        
-//        FormRenderer.include({
-//            async _renderView() {
-//                await this._super(...arguments);
-//                for(const element of this.el.querySelectorAll(".o_partner_order_summary")) {
-//                    // console.log(this);
-//                    // console.log(self);
-//                    // console.log(this.el);
-//                    // console.log(this.env)
-//                    // console.log(this.state);
+       FormRenderer.include({
+           async _renderView() {
+               await this._super(...arguments);
+               for(const element of this.el.querySelectorAll(".o_partner_order_summary")) {
+                   console.log(this);
+                   console.log(self);
+                   console.log(this.el);
+                   console.log(this.env)
+                   console.log(this.state);
        
-//                    this._rpc({
-//                        model: "res.partner",
-//                        method: "read",
-//                        args: [[this.state.data.partner_id.res_id]]
-//                    }).then(data => {
-//                        (new ComponentWrapper(this, SalesPartnerOrderSummary, useState(data[0]))
+                   this._rpc({
+                       model: "res.partner",
+                       method: "read",
+                       args: [[this.state.data.partner_id.res_id]]
+                   }).then(data => {
+                       (new ComponentWrapper(this, SalesPartnerOrderSummary, useState(data[0]))
                        
-//                        ).mount(element);
+                       ).mount(element);
        
-//                        // console.log(`2${this.element}`);
-//                        // console.log(`2${element}`);
-//                        // console.log(`2${databaseResponse}`);
-//                        // console.log(`2${this.env}`);
-//                        // console.log(`2${this.state}`);
-//                    });
+                       console.log(`1${this.element}`);
+                       console.log(`2${element}`);
+                       console.log(`3${data}`);
+                       console.log(`4${this.env}`);
+                       console.log(`5${this.state}`);
+                   });
        
-//                }
+               }
        
        
-//            }
-//        });
+           }
+       });
 
     
 
        
-//         SalesPartnerOrderSummary.template = 'custom_restaurant.SalesPartnerOrderSummary';
-//        Registries.Component.add(SalesPartnerOrderSummary);
-//        return SalesPartnerOrderSummary;
-//     });
+        SalesPartnerOrderSummary.template = 'SalesPartnerOrderSummary';
+    //    Registries.Component.add(SalesPartnerOrderSummary);
+       return SalesPartnerOrderSummary;
+    });
