@@ -26,7 +26,8 @@
     'qweb': [
         'static/src/xml/custom_pos.xml',
         'static/src/xml/myButton.xml',
-        'static/src/xml/currencyExRatesPopup.xml'
+        'static/src/xml/currencyExRatesPopup.xml',
+        'static/src/xml/POSCustomizedPaymentReceipt.xml'
             ],
     'installable': True,
     'application': True,

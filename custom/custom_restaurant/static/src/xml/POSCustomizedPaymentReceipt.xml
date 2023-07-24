@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" name="receipt_name">
+    <!-- <t t-inherit="point_of_sale.ReceiptScreen" t-inherit-mode="extension">
+        <xpath expr="//h1" position="before">
+        </xpath>
+    </t> -->
+    <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+        <xpath exp="//div[hasclass='pos-receipt']" position="replace">
+            <div class="pos-receipt">
+                <t t-set="ReceiptClient" t-value="env.pos.get_client() || ''"/>
+                <div style="width: 266px; font-size: 14px; direction: rtl; text-align: center;">
+                    <style>
+                        table, th, td {
+                            border-bottom: 1px solid black;
+                            text-align: right;
+                            width: 265px;
+                            font-size: 14px;}
+                    </style>
+                    <img class="pos-receipt-logo" t-att-src="receipt.company.logo" alt="Logo"/>
+                    <span style="text-align:center; padding: 0;">فاتورة</span>
+                    <br/>
+                    <tr style="width: 265px;" height="10px">
+                        <th colspan="2">
+                           <span t-esc="receipt.company.vat"/>: الرقم الضريبي
+
+                        </th>
+
+                    </tr>
+                </div>
+
+
+            </div>
+
+        </xpath>
+        
+
+
+    </t>
+</templates>
