@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.OrderLinesReceipt" t-inherit-mode="extension">
+        <xpath expr="//t[@t-name='OrderLinesReceipt'" position="replace">
+            <t t-name="OrderLinesReceipt" owl="1">
+                <t t-foreach="receipt.orderlines" t-as="line" t-key="line.id">
+                    <tr style="text-align: center;">
+                        <td><span t-esc="line.product_name_wrapped[0]"></span></td>
+                        <td><span t-esc="env.pos.format_currency_no_symbol(line.quantity) || ''"></span></td>
+                        <td><span t-esc="env.pos.format_currency_no_symbol(line.price)"></span></td>
+                        <td><span t-esc="env.pos.format_currency_no_symbol(line.price_without_tax) || env.pos.format_currency_no_symbol(line.price)"></span></td>
+                    </tr>
+                </t>
+
+            </t>
+
+        </xpath>
+    </t>
+
+</templates>
