@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="POSReceiptTypeTemplate" owl="1">
+        <div class="o_hover o_we_hover_danger">
+            <span style="border: solid 1px #bfbfbf; font-weight: bold; height: 54px; width: 54px;
+            margin-left: 18px; margin-top: 6px; margin-bottom: 3px; line-height: 38px; padding: 5px 10px 10px 10px;
+            font-size: 18px;">
+            <span class="label">Receipt Type</span>
+            <button class="custom-mode-button" t-on-click="setDefault">Default</button>
+            <button class="custom-mode-button" t-on-click="setA4">A4</button>
+            <button class="custom-mode-button" t-on-click="setA5">A5</button>
+            <button class="custom-mode-button" t-on-click="setA1">A1</button>
+            </span>
+        </div>
+
+    </t>
+
+</templates>

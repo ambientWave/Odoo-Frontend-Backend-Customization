@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" name="receipt_name">
-    <!-- <t t-inherit="point_of_sale.ReceiptScreen" t-inherit-mode="extension">
+    <t t-inherit="point_of_sale.ReceiptScreen" t-inherit-mode="extension">
         <xpath expr="//h1" position="before">
+            <POSReceiptType/>
         </xpath>
-    </t> -->
+    </t>
 
     <!-- translations can be found in ar.po files -->
         <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
