@@ -68,6 +68,8 @@
                                         </td>
                                         <td>
                                             <span t-field="o.sale_total_credit"/>
+                                            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.sale_total_credit, 600, 100)"
+                                            style="width:290px;height:60px;"/>
                                         </td>
                                     </tr>
                             </table>
