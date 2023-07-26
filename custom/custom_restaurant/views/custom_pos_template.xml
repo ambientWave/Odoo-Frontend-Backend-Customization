@@ -10,7 +10,7 @@
         </xpath>
     </template>
 
-    <template id="pos_extend_assets" inherit_id="point_of_sale.assets">
+    <template id="assets_backend" name="FormController assets" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
             <script type="text/javascript" src="/custom_restaurant/static/src/js/HideEditButtonInFormViewBasedOnACondition.js"/>
         </xpath>
