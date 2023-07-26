@@ -97,15 +97,18 @@
                         <p style="font-size: 14px; font-weight: bold; color: white; background: black;">البضاعة لا ترد ولاتستبدل بعد خروجها من المحل</p>
                         <img t-if="receipt.qr_code" id="qrcode" t-att-src="receipt.qr_code" class="pos-receipt-logo"/>
                 </div>
+                <div id="qrcode"></div>
 
-                <!-- http://hostingdomain:portno/report/barcode/?type=Code128&value=test&width=600&height=100 -->
-                <!-- t-att-src is important to substitute receipt.name with the assigned value -->
-                <img t-att-src="'/report/barcode/?type=Code128&amp;value='+receipt.name+'&amp;width=600&amp;height=100'"
-                style="width:290px;height:60px;"/>
-
-                <center><img t-att-src="'/report/barcode/?type=QR&amp;value='+receipt.name+'&amp;width=100&amp;height=100'"
-                style="width:60px;height:60px;"/></center>
-
+                <script type="text/javascript">
+                    var qrcode = new QRCode(document.getElementById("qrcode"), {
+                        text: "<t t-esc="receipt.name"/>",
+                        width: 128,
+                        height: 128,
+                        colorDark : "#000000",
+                        colorLight : "#ffffff",
+                        correctLevel : QRCode.CorrectLevel.H
+                    });
+                </script>
 
 
                 <div class="before-footer" />

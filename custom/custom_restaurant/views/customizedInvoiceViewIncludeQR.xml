@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="res_invoice_inherit" model="ir.ui.view">
+            <field name="name">account.move.report</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name = 'payment_reference']" position="after">
+                    <field name="qr_code_db" widget='image' class="oe_avatar"
+                     />
+                     
+                </xpath>
+       </field>
+   </record>
+    </data>
+ </odoo>

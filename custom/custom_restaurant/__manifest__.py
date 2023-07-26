@@ -20,6 +20,7 @@
         'views/pos_combined.xml',
         'views/custom_pos_template.xml',
         'views/inventory_stock.xml',
+        'views/customizedInvoiceViewIncludeQR.xml',
         'report/report_sale_receipt_template.xml',
         'report/report.xml',
              ],

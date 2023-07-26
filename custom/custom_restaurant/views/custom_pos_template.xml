@@ -6,6 +6,7 @@
             <script type="text/javascript" src="/custom_restaurant/static/src/js/myButton.js"/>
             <script type="text/javascript" src="/custom_restaurant/static/src/js/currencyExRatesPopup.js"/>
             <script type="text/javascript" src="/custom_restaurant/static/src/js/customTicketButtons.js"/>
+            <script type="text/javascript" src="/custom_restaurant/static/src/lib/qrcode.js"/>
             <script type="text/javascript" src="/custom_restaurant/static/src/js/POSReceiptType.js"/>
         </xpath>
     </template>
