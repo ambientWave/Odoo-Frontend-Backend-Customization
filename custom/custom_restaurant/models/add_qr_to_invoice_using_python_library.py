@@ -16,7 +16,7 @@ class ReportInvoice(models.Model):
    qr_code_db = fields.Binary('QRcode', compute="_generate_qr") # , store=True)
    # stored_db_bin = fields.Binary('QRcode2', compute="_generate_qr", store=True)
 
-   @api.depends('qr_code_db', 'payment_reference')
+   # @api.depends('qr_code_db', 'payment_reference')
    def _generate_qr(self):
 
       "method to generate QR code"
