@@ -11,4 +11,12 @@
 <!--            <script type="text/javascript" src="/pos_custom_buttons/static/src/js/pos_ticket_button.js"/>-->
         </xpath>
     </template>
+
+    <template id="assets_backend" name="BaseView assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/custom_restaurant/static/src/js/ShowArchiveButtonIfAdmin.js"/>
+            
+        </xpath>
+    </template>
+
 </odoo>
