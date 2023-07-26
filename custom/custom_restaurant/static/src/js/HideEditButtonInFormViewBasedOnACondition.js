@@ -8,15 +8,15 @@ odoo.define('custom_restaurant.HideEditButtonBasedOnACondition', function (requi
         getSelectedIds: function() {
             var menu = this.$el.find(".o_form_button_edit");
 
-            var button = this.$buttons.find("o_form_button_edit").show();
+            var button = this.$buttons.find(".o_form_button_edit").show();
             if (this.modelName === "stock.picking") {
                 var currentModelViewedRecord = this.model.get(this.handle).data;
                 console.log(this.modelName);
-                console.log(this.model.get(this.handle).data);
+                console.log(this.model.get(this.handle).data); //this is an important object
                 console.log(currentModelViewedRecord.state);
 
                 if (currentModelViewedRecord.state === 'done') {
-                    this.$buttons.find("o_form_button_edit").hide();
+                    this.$buttons.find(".o_form_button_edit").hide();
                 }
             }
 
