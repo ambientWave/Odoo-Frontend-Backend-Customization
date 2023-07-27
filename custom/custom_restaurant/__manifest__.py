@@ -18,7 +18,7 @@
         'wizard/remove_invoice_views.xml',
         'views/menu_item.xml',
         'views/pos_combined.xml',
-        '',
+        'views/BackendAssets.xml',
         'views/custom_pos_template.xml',
         'views/inventory_stock.xml',
         'report/report_sale_receipt_template.xml',
