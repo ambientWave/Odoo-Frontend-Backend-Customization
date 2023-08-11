@@ -4,11 +4,11 @@ This demonstartes customizations in the POS module. The added button which is na
 ## Screenshots
 
 <picture>
- <img alt="Screenshot1" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/main/custom/main.png">
+ <img alt="Screenshot1" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/ChartOfAccountsListAddButtonToUpperPanel/custom/ChartOfAccountsListAddButtonToUpperPanel.png">
 </picture>
 
 <picture>
- <img alt="Screenshot2" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/main/custom/main2.png">
+ <img alt="Screenshot2" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/ChartOfAccountsListAddButtonToUpperPanel/custom/ChartOfAccountsListAddButtonToUpperPanel2.png">
 </picture>
 
 Getting started with Odoo
