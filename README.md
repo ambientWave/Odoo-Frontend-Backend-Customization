@@ -5,15 +5,14 @@
 > |     1| main      |
 > |     2| ChartOfAccountsListAddButtonToUpperPanel|
 > |     3| POSAddButtonsInPaymentScreen       |
-> |     3| POSCustomizedPaymentReceipt       |
-> |     3| POSDiscountButtonAuthorizedUser       |
-> |     3| POSShowDiscountButtonBasedOnACondition       |
-> |     3| SalesFormAddNewElementsToUI       |
-> |     3| WorkWithPythonAndJSLibs-AppliedOnInvoicingAndPOSReceipts       |
-> |     3| addNewButtonToListView       |
-> |     3| modify-CreateAndEdit-ButtonsInUpperPanel       |
-> |     3| modifyActionButtonMenuItemsUsingJS       |
-> |     3| SQL       |
+> |     4| POSCustomizedPaymentReceipt       |
+> |     5| POSDiscountButtonAuthorizedUser       |
+> |     6| POSShowDiscountButtonBasedOnACondition       |
+> |     7| SalesFormAddNewElementsToUI       |
+> |     8| WorkWithPythonAndJSLibs-AppliedOnInvoicingAndPOSReceipts|
+> |     9| addNewButtonToListView       |
+> |    10| modify-CreateAndEdit-ButtonsInUpperPanel       |
+> |    11| modifyActionButtonMenuItemsUsingJS       |
   
 # Fetching and using the currency exchange rates by sending HTTP request with GET method to external API
 This demonstartes customizations in the POS module. The added button which is named "Currency Exchange Rates" opens up a new dialog that one can select the currency and see the up-to-date exchange rate.
