@@ -1,6 +1,6 @@
 > **Note**
 > This repository includes 11 different branches. Each one contains 
-> | Rank | Languages |
+> | Number | Languages |
 > |-----:|-----------|
 > |     1| main      |
 > |     2| ChartOfAccountsListAddButtonToUpperPanel|
