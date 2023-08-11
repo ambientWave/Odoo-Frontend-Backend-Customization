@@ -1,5 +1,5 @@
-# Adding a new button to a specific model and view
-This demonstartes customizations in a given module. The added button which is named "myButton" opens up a new js window alert and a new odoo view.
+# Adding a new button to a specific screen of POS that executes some logic
+This demonstartes customizations in the POS module. The added button which is named "My Button" opens up a new dialogue that contains the name of current user.
 
 ## Screenshots
 
@@ -10,9 +10,3 @@ This demonstartes customizations in a given module. The added button which is na
 <picture>
  <img alt="Screenshot2" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/POSAddButtonsInPaymentScreen/custom/POSAddButtonsInPaymentScreen2.png">
 </picture>
-
-Getting started with Odoo
--------------------------
-
-For a standard installation please follow the <a href="https://www.odoo.com/documentation/14.0/administration/install.html">Setup instructions</a>
-from the documentation.
