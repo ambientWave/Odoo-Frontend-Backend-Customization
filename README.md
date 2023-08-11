@@ -1,5 +1,5 @@
-# Fetching and using the currency exchange rates by sending HTTP request with GET method to external API
-This demonstartes customizations in the POS module. The added button which is named "Currency Exchange Rates" opens up a new dialog that one can select the currency and see the up-to-date exchange rate.
+# Adding a new button to a specific model and view
+This demonstartes customizations in a given module. The added button which is named "myButton" opens up a new js window alert and a new odoo view.
 
 ## Screenshots
 
