@@ -1,11 +1,15 @@
 > **Note**
 > This is a note
+> | Rank | Languages |
+> |-----:|-----------|
+> |     1| Javascript|
+> |     2| Python    |
+> |     3| SQL       |
 
-| Rank | Languages |
-|-----:|-----------|
-|     1| Javascript|
-|     2| Python    |
-|     3| SQL       |
+
+
+
+
 
 
 # Fetching and using the currency exchange rates by sending HTTP request with GET method to external API
