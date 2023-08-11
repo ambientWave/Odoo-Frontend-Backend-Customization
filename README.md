@@ -10,9 +10,3 @@ This demonstartes customizations in the POS module. The added button which is na
 <picture>
  <img alt="Screenshot2" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/main/custom/main2.png">
 </picture>
-
-Getting started with Odoo
--------------------------
-
-For a standard installation please follow the <a href="https://www.odoo.com/documentation/14.0/administration/install.html">Setup instructions</a>
-from the documentation.
