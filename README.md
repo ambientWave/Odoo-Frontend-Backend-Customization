@@ -1,6 +1,6 @@
 > **Note**
 > This is a note
-> | Rank | Languages |
+| Rank | Languages |
 |-----:|-----------|
 |     1| Javascript|
 |     2| Python    |
