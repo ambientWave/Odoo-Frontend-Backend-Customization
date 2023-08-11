@@ -1,10 +1,13 @@
-[![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
-[![Tech Doc](https://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/master)
-[![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
-[![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
+# Fetching and using the currency exchange rates by sending HTTP request with GET method to external API
+This application can be used to manipulate a collection of cosmetic products by applying the CRUD operations through REST API. This is achieved using Flask framework to expose specific endpoints and one of three database engines (SQLite, PostgreSQL or MongoDB).
 
-Odoo
-----
+## Screenshots
+1. The JSON returned by the backend app after a HTTP request using GET method
+
+<picture>
+ <img alt="Screenshot1" src="https://raw.githubusercontent.com/ambientWave/Cosmetic-Product-Flask-REST-API/main/Image1.png">
+</picture>
+
 
 Odoo is a suite of web based open source business apps.
 
