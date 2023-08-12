@@ -1,11 +1,16 @@
-# Adding a new button to a specific screen of POS that executes some logic
-This demonstartes customizations in the POS module. The added button which is named "My Button" opens up a new dialogue that contains the name of current user.
+# Controlling the visibilty of the discount button based on the identity of the logged user
+This demonstartes customizations in the POS module. The discount button would be visible only if the user that is logged in is the admin.
 
 ## Screenshots
+
+1. The discount button is visible because the admin is logged in
 
 <picture>
  <img alt="Screenshot1" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/POSShowDiscountButtonBasedOnACondition/custom/POSShowDiscountButtonBasedOnACondition.png">
 </picture>
+
+
+2. The discount button is not visible because the user is someone other than the admin
 
 <picture>
  <img alt="Screenshot2" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/POSShowDiscountButtonBasedOnACondition/custom/POSShowDiscountButtonBasedOnACondition2.png">
