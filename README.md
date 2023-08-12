@@ -2,7 +2,7 @@
 > This repository consists of 11 different branches. Each one contains files essential to demonstrate certain functionality. Make sure to review the following table to help yourself navigating your way!
 > | Branch Name |Demonstrated Functionality |
 > |-----|-------|
-> |     [main]|(https://github.com/ambientWave/Odoo-Frontend-Backend-Customization/tree/main)Fetching the currency exchange rates by external API     |
+> |     [main](https://github.com/ambientWave/Odoo-Frontend-Backend-Customization/tree/main)|Fetching the currency exchange rates by external API     |
 > |     ChartOfAccountsListAddButtonToUpperPanel| Adding a new button to the upper panel of a specific model and view|
 > |     POSAddButtonsInPaymentScreen| Adding a new button to a specific screen of POS |
 > |     POSCustomizedPaymentReceipt| Modifying the POS Receipt Content|
