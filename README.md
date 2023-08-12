@@ -1,11 +1,11 @@
 > **Note**
 > This repository consists of 11 different branches. Each one contains files essential to demonstrate certain functionality
-> | Branch Number |Demonstrated Functionality |
+> | Branch Name |Demonstrated Functionality |
 > |-----:|-------|
-> |     1| main      |
-> |     2| ChartOfAccountsListAddButtonToUpperPanel|
-> |     3| POSAddButtonsInPaymentScreen       |
-> |     4| POSCustomizedPaymentReceipt       |
+> |     main| main      |
+> |     ChartOfAccountsListAddButtonToUpperPanel| ChartOfAccountsListAddButtonToUpperPanel|
+> |     POSAddButtonsInPaymentScreen| POSAddButtonsInPaymentScreen       |
+> |     POSCustomizedPaymentReceipt| POSCustomizedPaymentReceipt       |
 > |     5| POSDiscountButtonAuthorizedUser       |
 > |     6| POSShowDiscountButtonBasedOnACondition       |
 > |     7| SalesFormAddNewElementsToUI       |
