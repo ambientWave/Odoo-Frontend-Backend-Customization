@@ -4,9 +4,9 @@
 > |-----|-------|
 > |     main| Fetching the currency exchange rates by external API     |
 > |     ChartOfAccountsListAddButtonToUpperPanel| Adding a new button to the upper panel of a specific model and view|
-> |     POSAddButtonsInPaymentScreen| POSAddButtonsInPaymentScreen       |
-> |     POSCustomizedPaymentReceipt| POSCustomizedPaymentReceipt       |
-> |     POSDiscountButtonAuthorizedUser| POSDiscountButtonAuthorizedUser       |
+> |     POSAddButtonsInPaymentScreen| Adding a new button to a specific screen of POS |
+> |     POSCustomizedPaymentReceipt| Modifying the POS Receipt Content|
+> |     POSDiscountButtonAuthorizedUser| Controlling the visibilty of discount button in POS Module by making it protected by a password|
 > |     POSShowDiscountButtonBasedOnACondition| POSShowDiscountButtonBasedOnACondition       |
 > |     SalesFormAddNewElementsToUI| SalesFormAddNewElementsToUI       |
 > |     WorkWithPythonAndJSLibs-AppliedOnInvoicingAndPOSReceipts| WorkWithPythonAndJSLibs-AppliedOnInvoicingAndPOSReceipts|
