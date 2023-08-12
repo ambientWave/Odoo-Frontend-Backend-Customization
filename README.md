@@ -1,5 +1,5 @@
 # Adding a new custom section, which displays information loaded by odoo environment, to a specific view of certain model
-This demonstartes customizations in the sales module. The added section displays the avatar and order count of the loaded customer/partner. In addition, other custom HTML elements are added
+This demonstartes customizations in the sales module. The added section displays the avatar and order count of the loaded customer/partner. In addition, other custom HTML elements are added.
 
 ## Screenshots
 
