@@ -6,13 +6,13 @@
 > |     ChartOfAccountsListAddButtonToUpperPanel| Adding a new button to the upper panel of a specific model and view|
 > |     POSAddButtonsInPaymentScreen| Adding a new button to a specific screen of POS |
 > |     POSCustomizedPaymentReceipt| Modifying the POS Receipt Content|
-> |     POSDiscountButtonAuthorizedUser| Controlling the visibilty of discount button in POS Module by making it protected by a password|
-> |     POSShowDiscountButtonBasedOnACondition| POSShowDiscountButtonBasedOnACondition       |
-> |     SalesFormAddNewElementsToUI| SalesFormAddNewElementsToUI       |
-> |     WorkWithPythonAndJSLibs-AppliedOnInvoicingAndPOSReceipts| WorkWithPythonAndJSLibs-AppliedOnInvoicingAndPOSReceipts|
-> |     addNewButtonToListView| addNewButtonToListView       |
-> |    modify-CreateAndEdit-ButtonsInUpperPanel| modify-CreateAndEdit-ButtonsInUpperPanel       |
-> |    modifyActionButtonMenuItemsUsingJS| modifyActionButtonMenuItemsUsingJS       |
+> |     POSDiscountButtonAuthorizedUser| Controlling the visibilty of discount button in POS Module by authentication|
+> |     POSShowDiscountButtonBasedOnACondition| Controlling the visibilty of the discount button based on some condition       |
+> |     SalesFormAddNewElementsToUI| Adding a new custom section which displays information loaded by odoo environment       |
+> |     WorkWithPythonAndJSLibs-AppliedOnInvoicingAndPOSReceipts| Adding new functionalities to the modules by working with external libraries|
+> |     addNewButtonToListView| Adding a new button to the upper panel of specific view of certain module that executes some logic|
+> |    modify-CreateAndEdit-ButtonsInUpperPanel| Controlling the visibilty of the create and edit buttons based on some condition|
+> |    modifyActionButtonMenuItemsUsingJS| Controlling the visibilty of the action button based on some condition|
   
 # Fetching and using the currency exchange rates by sending HTTP request with GET method to external API
 This demonstartes customizations in the POS module. The added button which is named "Currency Exchange Rates" opens up a new dialog where one can select the currency and see the up-to-date exchange rate.
