@@ -1,4 +1,4 @@
-# Controlling the visibilty of the create and edit buttons in a specific module based on some condition e.g. the status of sales order
+# Controlling the visibilty of the create and edit buttons in a specific module based on some condition e.g. the status of inventory transfer
 This demonstartes customizations in the POS module. The discount button would be visible only if the user that is logged in is the admin.
 
 ## Screenshots
