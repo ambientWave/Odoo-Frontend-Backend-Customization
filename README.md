@@ -1,5 +1,5 @@
 > **Note**
-> This repository consists of 11 different branches. Each one contains files essential to demonstrate certain functionality
+> This repository consists of 11 different branches. Each one contains files essential to demonstrate certain functionality. Make sure to review the following table to help yourself navigating your way!
 > | Branch Name |Demonstrated Functionality |
 > |-----|-------|
 > |     main| main      |
