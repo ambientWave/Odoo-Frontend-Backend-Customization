@@ -1,4 +1,4 @@
-# Adding a new button to a specific screen of POS that executes some logic
+# Adding a new functionality to the modules by working with external libraries
 This demonstartes customizations in the POS module. The added button which is named "My Button" opens up a new dialogue that contains the name of current user.
 
 ## Screenshots
