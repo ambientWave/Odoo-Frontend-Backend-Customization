@@ -9,7 +9,6 @@ This demonstartes customizations in the POS module. The discount button would be
  <img alt="Screenshot1" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/POSShowDiscountButtonBasedOnACondition/custom/POSShowDiscountButtonBasedOnACondition.png">
 </picture>
 
-
 2. The discount button is not visible because the user is someone other than the admin
 
 <picture>
