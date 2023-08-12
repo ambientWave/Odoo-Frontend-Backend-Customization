@@ -1,5 +1,5 @@
 # Adding a new button to the upper panel of specific view of certain module that executes some logic
-This demonstartes customizations in the POS dashboard model. The added button which is named "myCustomButton" opens up a new browser window alert and a new browser window where one can send a Whatsapp test message.
+This demonstartes customizations in the POS dashboard model. The added button which is named "myCustomButton" opens up a new browser window alert that contains a string returned by a python function and a new browser window where one can send a Whatsapp test message.
 
 ## Screenshots
 
