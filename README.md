@@ -3,13 +3,13 @@ This demonstartes customizations in the inventory module. The edit button would 
 
 ## Screenshots
 
-1. The discount button is visible because the admin is logged in
+1. The edit button is visible because the status of inventory transfer is not set as "done"
 
 <picture>
  <img alt="Screenshot1" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/modify-CreateAndEdit-ButtonsInUpperPanel/custom/modify-CreateAndEdit-ButtonsInUpperPanel.png">
 </picture>
 
-2. The discount button is not visible because the user is someone other than the admin
+2. The discount button is not visible because the status of inventory transfer is set as "done"
 
 <picture>
  <img alt="Screenshot2" src="https://raw.githubusercontent.com/ambientWave/Odoo-Frontend-Backend-Customization/modify-CreateAndEdit-ButtonsInUpperPanel/custom/modify-CreateAndEdit-ButtonsInUpperPanel2.png">
