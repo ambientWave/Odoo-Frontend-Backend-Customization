@@ -15,7 +15,7 @@
 > |    11| modifyActionButtonMenuItemsUsingJS       |
   
 # Fetching and using the currency exchange rates by sending HTTP request with GET method to external API
-This demonstartes customizations in the POS module. The added button which is named "Currency Exchange Rates" opens up a new dialog that one can select the currency and see the up-to-date exchange rate.
+This demonstartes customizations in the POS module. The added button which is named "Currency Exchange Rates" opens up a new dialog where one can select the currency and see the up-to-date exchange rate.
 
 ## Screenshots
 
