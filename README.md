@@ -1,7 +1,7 @@
 > **Note**
 > This repository consists of 11 different branches. Each one contains files essential to demonstrate certain functionality
 > | Branch Name |Demonstrated Functionality |
-> |-----:|-------|
+> |-----|-------|
 > |     main| main      |
 > |     ChartOfAccountsListAddButtonToUpperPanel| ChartOfAccountsListAddButtonToUpperPanel|
 > |     POSAddButtonsInPaymentScreen| POSAddButtonsInPaymentScreen       |
