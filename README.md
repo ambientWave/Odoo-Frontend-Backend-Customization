@@ -1,4 +1,4 @@
-# Adding a new button to a specific model and view
+# Adding a new button to the upper panel of a specific model and view
 This demonstartes customizations in a given module. The added button which is named "myButton" opens up a new js window alert and a new odoo view.
 
 ## Screenshots
