@@ -1,5 +1,5 @@
 # Controlling the visibilty of the create and edit buttons in a specific module based on some condition e.g. the status of inventory transfer
-This demonstartes customizations in the inventory module. The edit button would be visible only if the status of inventory transfer is set as "".
+This demonstartes customizations in the inventory module. The edit button would be visible only if the status of inventory transfer is not set as "done".
 
 ## Screenshots
 
