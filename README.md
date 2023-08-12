@@ -1,5 +1,5 @@
 # Controlling the visibilty of the action button based on some condition e.g. the identity of the logged user
-This demonstartes customizations in the POS module. The added button which is named "My Button" opens up a new dialogue that contains the name of current user.
+This demonstartes customizations in the products module. The action button would be visible only if the user that is logged in, is the admin.
 
 ## Screenshots
 
