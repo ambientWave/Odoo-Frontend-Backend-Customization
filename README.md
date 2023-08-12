@@ -1,6 +1,6 @@
 > **Note**
 > This repository consists of 11 different branches. Each one contains files essential to demonstrate certain functionality
-> | Branch Number | Demonstrated Functionality |
+> | Branch Number |Demonstrated Functionality |
 > |-----:|-------|
 > |     1| main      |
 > |     2| ChartOfAccountsListAddButtonToUpperPanel|
