@@ -2,8 +2,8 @@
 > This repository consists of 11 different branches. Each one contains files essential to demonstrate certain functionality. Make sure to review the following table to help yourself navigating your way!
 > | Branch Name |Demonstrated Functionality |
 > |-----|-------|
-> |     main| main      |
-> |     ChartOfAccountsListAddButtonToUpperPanel| ChartOfAccountsListAddButtonToUpperPanel|
+> |     main| Fetching the currency exchange rates by external API     |
+> |     ChartOfAccountsListAddButtonToUpperPanel| Adding a new button to the upper panel of a specific model and view|
 > |     POSAddButtonsInPaymentScreen| POSAddButtonsInPaymentScreen       |
 > |     POSCustomizedPaymentReceipt| POSCustomizedPaymentReceipt       |
 > |     POSDiscountButtonAuthorizedUser| POSDiscountButtonAuthorizedUser       |
